@@ -1,6 +1,6 @@
 {
   "name": "separatag",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "simple tool for markdown files separating",
   "main": "index.js",
   "type": "module",

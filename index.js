@@ -21,7 +21,7 @@ try {
 
     if(settings.outputType === 'array') {
 
-      arrayBody += '`' + content.trim() + '`' + ','
+      arrayBody += '`' + content.replace(/\`/g, "\\`").trim() + '`' + ','
     } else {
       fs.writeFile(fileName.replace(/\.[^/.]+$/, "") + counter + '.md', content.trim(), function (err) {
         if (err) throw err;
